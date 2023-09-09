@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "J3A++ZlgoOB80vHtiIDeci4f4ADI6kX4xm9R4t/uV5xArQ7nd/LtbfvKOcal74a9FJpCs6tsCOarKUU8Q1yNaQ==",
+  "success": true,
+  "projectFilePath": "/home/ayaka/projects/lenguajes/repo-labs/practica3/practica3.fsproj",
+  "expectedPackageFiles": [
+    "/home/ayaka/.nuget/packages/fsharp.core/7.0.0/fsharp.core.7.0.0.nupkg.sha512",
+    "/home/ayaka/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.10/microsoft.aspnetcore.app.ref.7.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
