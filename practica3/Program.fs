@@ -3,9 +3,10 @@ open Substrings
 open Nthelement
 open Rutacorta
 open Laberinto
+open Pesos
 
 let private grafo: Rutacorta.Graph = [
-    ("i", ["a"; "b"], [5; 6]);
+    ("i", ["a"; "b"], [6; 6]);
     ("a", ["i"; "c"; "d"], [5; 7; 9]);
     ("b", ["i"; "c"; "d"], [6; 10; 11]);
     ("c", ["a"; "b"; "x"], [7; 10; 21]);
@@ -58,13 +59,14 @@ let main (args: string array): int =
     shift "izq" 10 [1..20] |> printfn "%A"
     subStrings "la" ["la casa"; "el perro"; "pintando la cerca"; "la camisa"] |> printfn "%A"
 
-    nthElement 4 ["hola"; "me"; "llamo"; "aaron"]
+    tryNthElement 4 ["hola"; "me"; "llamo"; "aaron"]
     |> function 
     | Some(result) -> printfn "%A" result 
     | None -> printfn "Element not found"
 
     prof2 "i" "x" grafo |> printfn "%A"
 
-    shortestPath labirynth |> printfn "%A"
+    Laberinto.shortestPath labirynth |> printfn "%A"
+    Pesos.shortestPath "i" "x" grafo |> printfn "%A"
 
     0

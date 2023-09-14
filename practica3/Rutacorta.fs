@@ -4,8 +4,8 @@ type Node = (string * string list * int list)
 type Graph = Node list
 
 // Función para generar vecinos
-let rec vecinos (nodo: string) (grafo: Graph): string list =
-    match grafo with
+let rec vecinos (nodo: string) =
+    function
     | [] -> []
     | (head, neighbors, _) :: rest ->
         if head = nodo then neighbors

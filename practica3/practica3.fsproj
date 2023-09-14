@@ -11,6 +11,7 @@
     <Compile Include="Nthelement.fs" />
     <Compile Include="Rutacorta.fs" />
     <Compile Include="Laberinto.fs" />
+    <Compile Include="Pesos.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
