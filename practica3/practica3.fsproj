@@ -9,6 +9,8 @@
     <Compile Include="Shifts.fs" />
     <Compile Include="Substrings.fs" />
     <Compile Include="Nthelement.fs" />
+    <Compile Include="Rutacorta.fs" />
+    <Compile Include="Laberinto.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

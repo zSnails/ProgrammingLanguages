@@ -11,7 +11,7 @@ let private rightShift (times: int) (datum: _ list): _ list =
     |> (List.init times zeroes |> List.append)
 
 let public shift dir times datum =
-    match dir with
+    function
     | "der" -> rightShift times datum
     | "izq" -> leftShift times datum
     | _ -> [] // NOTE: handle every other case, just so that the language server stops screaming at me
